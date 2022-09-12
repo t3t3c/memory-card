@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+
+function Picture() {
+  return (
+    <div className="Picture">
+      <img></img>
+      <p></p>
+    </div>
+  )
+}
+
+function Gameboard() {
+  return <div className="Gameboard">
+    <Picture>
+  </div>;
+}
+
+function Scoreboard() {
+  return (
+    <div className="Scoreboard">
+      <p>Score:</p>
+      <p>Best Score:</p>
+    </div>
+  );
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>The Guitar Memory Game</h1>
+      <p>Don't click on any picture more than once!</p>
+      <Scoreboard />
+      <Gameboard />
     </div>
   );
 }
