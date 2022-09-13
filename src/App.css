@@ -1,3 +1,23 @@
+
+
 .App {
   text-align: center;
+}
+img {
+  /* overflow: hidden; */
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  object-position: top;
+}
+.Gameboard {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.Picture {
+  background-color: white;
+}
+.mission-passed {
+  width: auto;
 }
